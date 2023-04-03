@@ -44,7 +44,7 @@ function draw() {
 function mousePressed() {
   if (mouseButton === LEFT) {
     for (const point of points) {
-      if (dist(mouseX, mouseY, point.x, point.y) < 10) {
+      if (dist(mouseX, mouseY, point.x, point.y) < 40) {
         draggingPoint = point;
         return;
       }
